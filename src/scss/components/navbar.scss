@@ -1,0 +1,34 @@
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+//////////////// NAVBAR FILE  ///////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 40px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    .logo{
+        width: 85px;
+        height: 100px;
+    }
+    .container-links{
+        a{
+            font-family: Saira Condensed;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 35px;
+            color: $black;
+            margin-left: 100px;
+            text-decoration: none;
+        }
+    }
+}
