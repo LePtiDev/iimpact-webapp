@@ -4,12 +4,12 @@
 /////////////////////////////////////////////
 /////////////////////////////////////////////
 
-.menu{
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding: 40px 100px;
+    padding: 40px 60px 40px 100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -20,15 +20,33 @@
         height: 100px;
     }
     .container-links{
-        a{
+        position: relative;
+        display: flex;
+        list-style: none;
+        li{
+            position: relative;
+            z-index: 10;
             font-family: Saira Condensed;
             font-style: normal;
             font-weight: bold;
             font-size: 22px;
             line-height: 35px;
             color: $black;
-            margin-left: 100px;
+            padding: 40px 0 40px 100px;
             text-decoration: none;
+            cursor: pointer;
+            &:nth-child(4){
+                padding-right: 40px;
+            }
+        }
+        .indicator{
+            background-color: white;
+            height: 13px;
+            border-radius: 30px;
+            position: absolute;
+            top: 50%;
+            z-index: 1;
+            transition-duration: 200ms;
         }
     }
 }
