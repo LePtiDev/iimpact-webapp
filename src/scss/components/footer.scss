@@ -1,0 +1,33 @@
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+//////////////// FOOTER FILE  ///////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+footer {
+  background-color: #333333;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 115px 200px;
+  #logo {
+    width: 107px;
+  }
+  .footer_nav {
+    display: grid;
+    margin: 0 200px;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      margin: 20px 0;
+      font-family: Saira Condensed;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 35px;
+      /* identical to box height */
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+    }
+  }
+}
