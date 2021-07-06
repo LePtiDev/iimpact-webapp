@@ -15,7 +15,7 @@ footer {
   }
   .footer_nav {
     display: grid;
-    margin: 0 200px;
+    margin-left: 200px;
     a {
       text-decoration: none;
       color: #ffffff;
@@ -24,10 +24,32 @@ footer {
       font-style: normal;
       font-weight: bold;
       font-size: 22px;
-      line-height: 35px;
+      line-height: 32px;
       /* identical to box height */
       letter-spacing: 0.05em;
       text-transform: capitalize;
+    }
+  }
+  .last_events, .last_articles {
+    display: grid;
+    margin-left: 200px;
+    p {
+      text-decoration: none;
+      margin: 20px 0;
+      font-family: Saira Condensed;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 32px;
+      /* identical to box height */
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+    }
+    p:nth-child(1) {
+      color: white;
+    }
+    p:nth-child(n + 2) {
+      color: #9d9c9c;
     }
   }
 }

@@ -10,12 +10,20 @@
     <div class="last_events">
       <p id="events">Derniers évènements</p>
       <p>lorem ipsum</p>
+      <p>lorem ipsum</p>
+      <p>lorem ipsum</p>
+    </div>
+    <div class="last_articles">
+      <p id="articles">Derniers articles</p>
+      <p>lorem ipsum</p>
+      <p>lorem ipsum</p>
+      <p>lorem ipsum</p>
     </div>
   </footer>
 </template>
 
 <script>
 export default {
-  name: "Footer",
+  name: "Footer", 
 };
 </script>
