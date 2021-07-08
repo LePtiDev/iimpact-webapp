@@ -8,6 +8,7 @@ footer {
   background-color: #333333;
   display: flex;
   flex-wrap: wrap;
+  column-gap: 180px;
   align-items: center;
   padding: 115px 200px;
   #logo {
@@ -15,7 +16,6 @@ footer {
   }
   .footer_nav {
     display: grid;
-    margin-left: 200px;
     a {
       text-decoration: none;
       color: #ffffff;
@@ -30,9 +30,8 @@ footer {
       text-transform: capitalize;
     }
   }
-  .last_events, .last_articles {
+  .last_events, .last_articles, .footer_social {
     display: grid;
-    margin-left: 200px;
     p {
       text-decoration: none;
       margin: 20px 0;
@@ -50,6 +49,11 @@ footer {
     }
     p:nth-child(n + 2) {
       color: #9d9c9c;
+    }
+    #icons{
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 21px;
     }
   }
 }
