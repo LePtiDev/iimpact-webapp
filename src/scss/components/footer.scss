@@ -34,7 +34,7 @@ footer {
     display: grid;
     p {
       text-decoration: none;
-      margin: 20px 0;
+      margin: 15px 0;
       font-family: Saira Condensed;
       font-style: normal;
       font-weight: bold;
@@ -46,6 +46,7 @@ footer {
     }
     p:nth-child(1) {
       color: white;
+      margin-bottom: 34px;
     }
     p:nth-child(n + 2) {
       color: #9d9c9c;
