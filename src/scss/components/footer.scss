@@ -1,0 +1,100 @@
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+//////////////// FOOTER FILE  ///////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
+footer {
+  background-color: #333333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 180px;
+  align-items: center;
+  padding: 115px 200px;
+  @media screen and(max-width:1880px) {
+    padding: 100px 100px;
+    justify-content: space-evenly;
+  }
+  @media screen and(max-width:1595px) {
+    column-gap: 150px;
+  }
+  @media screen and(max-width:700px) {
+    padding: 100px 40px;
+  }
+  @media screen and(max-width:465px) {
+    justify-content: flex-start;
+    padding-left: 20%;
+  }
+  img {
+    @media screen and(max-width:1475px) {
+      margin: 0px 40% 30px;
+    }
+    @media screen and(max-width:1475px) {
+      margin: 0px 40% 30px;
+    }
+    @media screen and(max-width:465px) {
+      margin: 0px 20% 30px 20%;
+    }
+  }
+  #logo {
+    width: 107px;
+  }
+  .footer_nav {
+    display: grid;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      margin: 20px 0;
+      font-family: Saira Condensed;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 32px;
+      /* identical to box height */
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      @media screen and(max-width:1880px) {
+        font-size: 18px;
+      }
+    }
+    @media screen and(max-width:1790px) {
+      margin-bottom: 30px;
+    }
+  }
+  .last_events,
+  .last_articles,
+  .footer_social {
+    display: grid;
+    p {
+      text-decoration: none;
+      margin: 15px 0;
+      font-family: Saira Condensed;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 32px;
+      /* identical to box height */
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      @media screen and(max-width:1880px) {
+        font-size: 18px;
+      }
+    }
+    @media screen and(max-width:1790px) {
+      margin-bottom: 30px;
+    }
+    p:nth-child(1) {
+      color: white;
+      margin-bottom: 34px;
+    }
+    p:nth-child(n + 2) {
+      color: #9d9c9c;
+    }
+    #icons {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 21px;
+    }
+  }
+}
