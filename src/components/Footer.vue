@@ -107,3 +107,7 @@ export default {
   name: "Footer",
 };
 </script>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500;600;700&display=swap");
+</style>
