@@ -5,6 +5,10 @@
 /////////////////////////////////////////////
 
 
+#app{
+    overflow-y: hidden;
+}
+
 .pages{
     padding-top: $padding-pages-top-desktop;
 }

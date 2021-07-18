@@ -20,7 +20,7 @@
                 @mouseenter="setIndicatorPosition('Events')"
                 @mouseleave="setIndicatorPosition($route.name)"
                 @click="navigate('Events')"
-            >Évènement</li>
+            >Évènements</li>
 
             <li ref="Blog"
                 @mouseenter="setIndicatorPosition('Blog')"
