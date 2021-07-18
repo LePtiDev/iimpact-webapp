@@ -6,7 +6,9 @@
 
 
 #app{
+    overflow-x: hidden;
     overflow-y: hidden;
+    position: relative;
 }
 
 .pages{

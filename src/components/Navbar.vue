@@ -1,5 +1,5 @@
 <template>
-    <nav class="nav">
+    <nav class="nav" :style="deviceHeight" :class="navClass">
         <div class="logo">
             <img src="../assets/logos/logo.svg" alt="Logo iimpact">
         </div>
@@ -34,13 +34,27 @@
 <script>
 export default {
     name: "Navbar",
+    props: {
+      open: Boolean
+    },
     data(){
         return{
             indicatorclass: "",
+            navClass: "",
         }
     },
     mounted() {
         this.setIndicatorPosition(this.$route.name)
+    },
+    computed: {
+        deviceHeight(){
+            if(window.innerHeight < 999){
+                return "height: " + window.innerHeight + "px"
+            }
+            else{
+                return ""
+            }
+        }
     },
     methods: {
         setIndicatorPosition(route){
@@ -49,8 +63,23 @@ export default {
           this.indicatorclass = width + position
         },
         navigate(route){
-            this.$router.push({name: route})
-            this.setIndicatorPosition(route)
+            if(window.innerHeight < 999){
+                this.navClass = ""
+                this.$emit("close-menu")
+                this.$router.push({name: route})
+                this.setIndicatorPosition(route)
+            }
+            else{
+                this.$router.push({name: route})
+                this.setIndicatorPosition(route)
+            }
+        }
+    },
+    watch: {
+        open: function (val) {
+            if(val){
+                this.navClass = "nav-open";
+            }
         }
     }
 }

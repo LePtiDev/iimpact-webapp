@@ -1,16 +1,7 @@
 <template>
     <div id="app">
-
-        <!--    Burger menu    -->
-        <div class="burger-nav" @click="openMenu = true, console.log('test')">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-
-        <Navbar></Navbar>
-        <BurgerMenu></BurgerMenu>
-        <pre>{{ openMenu }}</pre>
+        <Navbar :open="openMenu" @close-menu="openMenu = false"></Navbar>
+        <BurgerButton @Open-nav="openMenu = true"></BurgerButton>
         <router-view class="pages"/>
     </div>
 </template>
@@ -18,12 +9,12 @@
 <script>
 
 import Navbar from "./components/Navbar";
-import BurgerMenu from "./components/BurgerMenu";
+import BurgerButton from "./components/BurgerButton";
 
 export default {
     components: {
         Navbar,
-        BurgerMenu
+        BurgerButton
     },
     data (){
         return{
