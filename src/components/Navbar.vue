@@ -9,7 +9,6 @@
                 @mouseleave="setIndicatorPosition($route.name)"
                 @click="navigate('Home')"
             >Accueil</li>
-
             <li ref="Members"
                 @mouseenter="setIndicatorPosition('Members')"
                 @mouseleave="setIndicatorPosition($route.name)"
@@ -45,31 +44,9 @@ export default {
     },
     methods: {
         setIndicatorPosition(route){
-            if(route === "Home"){
-                let width = " width: " + (this.$refs.Home.offsetWidth - 90) + "px;"
-                let position = "left: " + (this.$refs.Home.offsetLeft + 95) + "px;"
-                this.indicatorclass = width + position
-            }
-            else if(route === "Members"){
-                let width = " width: " + (this.$refs.Members.offsetWidth - 90) + "px;"
-                let position = "left: " + (this.$refs.Members.offsetLeft + 95) + "px;"
-                this.indicatorclass = width + position
-            }
-            else if(route === "Events"){
-                let width = " width: " + (this.$refs.Events.offsetWidth - 90) + "px;"
-                let position = "left: " + (this.$refs.Events.offsetLeft + 95) + "px;"
-                this.indicatorclass = width + position
-            }
-            else if(route === "Blog"){
-                let width = " width: " + (this.$refs.Blog.offsetWidth - 130) + "px;"
-                let position = "left: " + (this.$refs.Blog.offsetLeft + 95) + "px;"
-                this.indicatorclass = width + position
-            }
-            else{
-                let width = " width: " + (this.$refs.Home.offsetWidth - 90) + "px;"
-                let position = "left: " + (this.$refs.Home.offsetLeft + 95) + "px;"
-                this.indicatorclass = width + position
-            }
+          let width = " width: " + (this.$refs[route].offsetWidth - 90) + "px;"
+          let position = "left: " + (this.$refs[route].offsetLeft + 95) + "px;"
+          this.indicatorclass = width + position
         },
         navigate(route){
             this.$router.push({name: route})
